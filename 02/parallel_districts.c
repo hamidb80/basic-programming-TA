@@ -3,7 +3,6 @@
 void draw(int n)
 {
   for (int y = 0; y < n; y++)
-
   {
     int s = n - y;
     for (int x = 0; x < s; x++) // space

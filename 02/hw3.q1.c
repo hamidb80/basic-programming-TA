@@ -20,5 +20,5 @@ int main()
       max2 = y;
     }
   }
-  printf("#1=%d #2=%d", max1, max2  );
+  printf("#1=%d #2=%d", max1, max2);
 }
