@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-int main()
+void draw(int n)
 {
-  for (int y = 0; y <= 4; y++)
+  for (int y = 0; y < n; y++)
   {
-    for (int x = 0; x <= 4; x++)
+    for (int x = 0; x < n; x++)
     {
-      if (x == 0 || x == 4 || y == 0 || y == 4 || x == y || x + y == 4)
+      if (x == 0 || x == n - 1 || y == 0 || y == n - 1 || x == y || x + y == n - 1)
         printf("*");
       else
         printf(" ");
@@ -15,12 +15,19 @@ int main()
   }
 }
 
+int main()
+{
+  draw(7);
+}
+
 /* output:
 
-*****
-** **
-* * *
-** **
-*****
+*******
+**   **
+* * * *
+*  *  *
+* * * *
+**   **
+*******
 
 */
