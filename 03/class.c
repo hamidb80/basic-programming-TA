@@ -1,9 +1,13 @@
 #include <stdio.h>
 
-double c2f(double c)
+// --- function review
+
+double c2f(double c) // celsius to fahrenheit
 {
   return (c * 9 / 5) + 32;
 }
+
+// --- recursive function review :: like HW4 P10
 
 int fact(int n)
 {
@@ -12,6 +16,8 @@ int fact(int n)
   else
     return n * fact(n - 1);
 }
+
+// --- HW3 P1 ---
 
 void getmax2grade()
 {
@@ -44,6 +50,8 @@ void getmax2grade()
   printf("#1 = %d, #2 = %d", max1, max2);
 }
 
+// --- HW3 P4 ---
+
 void showColor()
 {
   printf("write the first letter of the color: ");
@@ -72,6 +80,8 @@ void showColor()
   }
 }
 
+// --- HW3 P9 ---
+
 void forEquivlent()
 {
   for (int i = 0; i < 10; i++)
@@ -87,6 +97,25 @@ void forEquivlent()
   }
 }
 
+// --- HW3 P10 ---
+
+double an(int n)
+{
+  return 1.0 / fact(n);
+}
+
+double series()
+{
+  double sum = 0.0;
+
+  for (int n = 1; n < 10; n++)
+    sum += an(n);
+
+  return sum;
+}
+
+// --- HW3 P12 ---
+
 void weekDay()
 {
   printf("day of week 1..7? ");
@@ -99,19 +128,19 @@ void weekDay()
     printf("shanbeh");
     break;
   case 2:
-    printf("1shanbeh");
+    printf("1 shanbeh");
     break;
   case 3:
-    printf("2shanbeh");
+    printf("2 shanbeh");
     break;
   case 4:
-    printf("3shanbeh");
+    printf("3 shanbeh");
     break;
   case 5:
-    printf("4shanbeh");
+    printf("4 shanbeh");
     break;
   case 6:
-    printf("5shanbeh");
+    printf("5 shanbeh");
     break;
   case 7:
     printf("jomeh");
@@ -119,9 +148,10 @@ void weekDay()
   default:
     printf("nadarim");
     break;
-    break;
   }
 }
+
+// --- HW3 P16 ---
 
 void diff()
 {
@@ -142,20 +172,7 @@ void diff()
   }
 }
 
-double an(int n)
-{
-  return 1.0 / fact(n);
-}
-
-double series()
-{
-  double sum = 0.0;
-
-  for (int n = 1; n < 10; n++)
-    sum += an(n);
-
-  return sum;
-}
+// --- main ---
 
 int main()
 {
