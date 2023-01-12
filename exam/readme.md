@@ -120,7 +120,8 @@ t = 12;
 +   struct student st[5];
 -   for (i=0; i<5; i++)
 +   for (int i=0; i<5; i++)
-     scanf_f("%f", st[i].ave);
+-     scanf_f("%f", st[i].ave);
++     scanf("%f", st[i].ave);
 + }
 ```
 
