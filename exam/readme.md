@@ -48,7 +48,7 @@ cond ? a : b;
 `cond`
 برقرار بود، عبارت 
 `a`
-جایگزین میشود و در غیر این صووتر عبارت
+جایگزین میشود و در غیر این صورت عبارت
 `b`
 .
 
@@ -92,36 +92,36 @@ k = 16 < 10 ? 24 : 64
 ```diff
 int t, *p;
 t = 12;
--p = t;
-+*p = t;
--printf("%d\n, *p");
-+printf("%d\n", *p);
+- p = t;
++ *p = t;
+- printf("%d\n, *p");
++ printf("%d\n", *p);
 ```
 
 ### ج
 ```diff
-int t = 12;
--printf("number is: %f, t");
-+printf("number is: %d", t);
+  int t = 12;
+- printf("number is: %f, t");
++ printf("number is: %d", t);
 ```
 
 ### د
 ```diff
-struct student {
-  int stno;
-  float ave;
--}
-+};
+  struct student {
+    int stno;
+    float ave;
+- }
++ };
 
--int main();
-+int main()
-{
--  student st[5];
-+  struct student st[5];
--  for (i=0; i<5; i++)
-+  for (int i=0; i<5; i++)
-    scanf_f("%f", st[i].ave);
-+}
+- int main();
++ int main()
+  { 
+-   student st[5];
++   struct student st[5];
+-   for (i=0; i<5; i++)
++   for (int i=0; i<5; i++)
+     scanf_f("%f", st[i].ave);
++ }
 ```
 
 
@@ -138,11 +138,11 @@ struct student {
 ## سوال 6
 این سوال ایراد داشت که باید اصلاح شود:
 ```diff
--*temp = *(ptr + in);
-+temp = *(ptr + in);
-*(ptr + in) = *(ptr + out);
--(ptr + out) = *temp;
-+*(ptr + out) = temp;
+- *temp = *(ptr + in);
++ temp = *(ptr + in);
+* (ptr + in) = *(ptr + out);
+- (ptr + out) = *temp;
++ *(ptr + out) = temp;
 ```
 
 ### الف
