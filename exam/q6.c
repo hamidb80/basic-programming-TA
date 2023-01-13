@@ -23,20 +23,20 @@ int main()
   }
 
   for (out = 0; out < count; out++)
-    for (in = 0; in < count; in++)
+    for (in = out+1; in < count; in++)
       // if (strcmp(*(ptr + out), *(ptr + in)) > 0)
       if (strcmp(ptr[out], ptr[in]) > 0)
       {
-        temp = *(ptr + in);
-        // *temp = ptr[in];
-        *(ptr + in) = *(ptr + out);
-        // ptr[in] = ptr[out];
-        *(ptr + out) = temp;
-        // ptr[out] = *temp;
+        // temp = *(ptr + in);
+        temp = ptr[in];
+        // *(ptr + in) = *(ptr + out);
+        ptr[in] = ptr[out];
+        // *(ptr + out) = temp;
+        ptr[out] = temp;
       }
 
   printf("<<the sorted list is:>>\n");
-  printf("temp '%s'", temp);
+  //printf("temp '%s'", temp);
 
   for (out = 0; out < count; out++)
     printf("\nname %d is: %s", out + 1, *(ptr + out));
