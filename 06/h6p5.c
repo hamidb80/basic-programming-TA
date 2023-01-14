@@ -37,7 +37,8 @@ void getContacts()
   }
 }
 
-void debugContants(){
+void debugContants()
+{
   for (int i = 0; i < len; i++)
     printContact(names[i], numbers[i]);
 }
@@ -65,6 +66,8 @@ int main()
     char answer = getchar();
     if (answer == 'n')
       break;
-    getchar();
   }
+  
+  getchar();
+  getchar();
 }
