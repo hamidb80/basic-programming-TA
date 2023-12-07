@@ -17,6 +17,6 @@ int main()
   int rows, cols;
   char ch;
 
-  scanf("%d*%d %c", &rows, &cols, &ch);
+  scanf_s("%d*%d %c", &rows, &cols, &ch);
   print_morabaaa(rows, cols, ch);
 }
