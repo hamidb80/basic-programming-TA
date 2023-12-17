@@ -7,7 +7,7 @@ void removeDuplicated(char s[], int len)
       skipped = 0,
       table[128] = {0};
 
-  for (int i = 0; i < strlen(s); i++)
+  for (int i = 0; i < len; i++)
   {
     char ch = s[i];
     table[ch] = table[ch] + 1;
