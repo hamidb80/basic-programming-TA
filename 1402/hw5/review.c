@@ -4,7 +4,6 @@
 int main()
 {
   // ------ defining array ------
-
   int arr1[4];
   int arr2[4] = {9, 3, 2, 1};
 
