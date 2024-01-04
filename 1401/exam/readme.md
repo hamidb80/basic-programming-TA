@@ -94,7 +94,7 @@ k = 16 < 10 ? 24 : 64;
 int t, *p;
 t = 12;
 - p = t;
-+ *p = t;
++ p = &t;
 - printf("%d\n, *p");
 + printf("%d\n", *p);
 ```
